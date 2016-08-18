@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		96199D031D65F97C00AAAAF1 /* OpenVG.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 96199D021D65F97C00AAAAF1 /* OpenVG.h */; };
-		96199D051D65F97C00AAAAF1 /* OpenVG.m in Sources */ = {isa = PBXBuildFile; fileRef = 96199D041D65F97C00AAAAF1 /* OpenVG.m */; };
+		96199D101D65F9AF00AAAAF1 /* openvg.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 96199D0C1D65F99D00AAAAF1 /* openvg.h */; };
+		96199D111D65F9B200AAAAF1 /* vgext.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 96199D0D1D65F99D00AAAAF1 /* vgext.h */; };
+		96199D121D65F9B500AAAAF1 /* vgplatform.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 96199D0E1D65F99D00AAAAF1 /* vgplatform.h */; };
+		96199D131D65F9B800AAAAF1 /* vgu.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 96199D0F1D65F99D00AAAAF1 /* vgu.h */; };
+		96199D151D65FA1400AAAAF1 /* OpenVG.c in Sources */ = {isa = PBXBuildFile; fileRef = 96199D141D65FA1400AAAAF1 /* OpenVG.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		96199CFD1D65F97C00AAAAF1 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
+			dstPath = include/VG;
 			dstSubfolderSpec = 16;
 			files = (
-				96199D031D65F97C00AAAAF1 /* OpenVG.h in CopyFiles */,
+				96199D101D65F9AF00AAAAF1 /* openvg.h in CopyFiles */,
+				96199D111D65F9B200AAAAF1 /* vgext.h in CopyFiles */,
+				96199D121D65F9B500AAAAF1 /* vgplatform.h in CopyFiles */,
+				96199D131D65F9B800AAAAF1 /* vgu.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,8 +32,11 @@
 
 /* Begin PBXFileReference section */
 		96199CFF1D65F97C00AAAAF1 /* libOpenVG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOpenVG.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		96199D021D65F97C00AAAAF1 /* OpenVG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenVG.h; sourceTree = "<group>"; };
-		96199D041D65F97C00AAAAF1 /* OpenVG.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenVG.m; sourceTree = "<group>"; };
+		96199D0C1D65F99D00AAAAF1 /* openvg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = openvg.h; sourceTree = "<group>"; };
+		96199D0D1D65F99D00AAAAF1 /* vgext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgext.h; sourceTree = "<group>"; };
+		96199D0E1D65F99D00AAAAF1 /* vgplatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgplatform.h; sourceTree = "<group>"; };
+		96199D0F1D65F99D00AAAAF1 /* vgu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vgu.h; sourceTree = "<group>"; };
+		96199D141D65FA1400AAAAF1 /* OpenVG.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = OpenVG.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +53,8 @@
 		96199CF61D65F97C00AAAAF1 = {
 			isa = PBXGroup;
 			children = (
-				96199D011D65F97C00AAAAF1 /* OpenVG */,
+				96199D141D65FA1400AAAAF1 /* OpenVG.c */,
+				96199D0B1D65F99D00AAAAF1 /* VG */,
 				96199D001D65F97C00AAAAF1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,13 +67,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		96199D011D65F97C00AAAAF1 /* OpenVG */ = {
+		96199D0B1D65F99D00AAAAF1 /* VG */ = {
 			isa = PBXGroup;
 			children = (
-				96199D021D65F97C00AAAAF1 /* OpenVG.h */,
-				96199D041D65F97C00AAAAF1 /* OpenVG.m */,
+				96199D0C1D65F99D00AAAAF1 /* openvg.h */,
+				96199D0D1D65F99D00AAAAF1 /* vgext.h */,
+				96199D0E1D65F99D00AAAAF1 /* vgplatform.h */,
+				96199D0F1D65F99D00AAAAF1 /* vgu.h */,
 			);
-			path = OpenVG;
+			path = VG;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96199D051D65F97C00AAAAF1 /* OpenVG.m in Sources */,
+				96199D151D65FA1400AAAAF1 /* OpenVG.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +265,7 @@
 				96199D0A1D65F97C00AAAAF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
