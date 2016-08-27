@@ -2,7 +2,7 @@
 These are the official Khronos Group OpenVG headers for OpenVG 1.1.
 
 The goal of this repository is not to contain code files, but only header files of the latest
-OpenVG header files.
+OpenVG specification from the registry.
 
 Additional modifications are to be provided in the VG/vgext.h file to support 3rd party extensions as well as
 platform support in VG/vgplatform.h . These mods might not be official, but updates that will help people supporting
