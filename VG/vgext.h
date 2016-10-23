@@ -87,7 +87,7 @@ VG_API_CALL void VG_API_ENTRY vgDrawBatchMNK( VGBatchMNK batch ) VG_API_EXIT;
 VG_API_CALL void VG_API_ENTRY vgDumpBatchMNK( VGBatchMNK batch, void **vertices, unsigned long *size ) VG_API_EXIT;
 
 /* context MonkVG */
-VG_API_CALL VGboolean vgCreateContextMNK( VGint width, VGint height, VGRenderingBackendTypeMNK backend );
+VG_API_CALL VGboolean vgCreateContextMNK( VGint width, VGint height );
 VG_API_CALL void vgResizeSurfaceMNK( VGint width, VGint height );
 VG_API_CALL void vgDestroyContextMNK( void );
 
